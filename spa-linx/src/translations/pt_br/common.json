@@ -1,0 +1,17 @@
+{
+    "sidenavtop": {
+        "presentation": {
+            "line1": "uma seleção de produtos",
+            "line2": "especial para você",
+            "line3": "Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!"
+        }
+    },
+    "app": {
+        "sidenavtop": {
+            "btn_linx": "Conheça a Linx",
+            "btn_help_algor": "Ajude o algoritmo",
+            "btn_products": "Seus produtos",
+            "btn_share": "Compartilhe"
+        }
+    }
+}

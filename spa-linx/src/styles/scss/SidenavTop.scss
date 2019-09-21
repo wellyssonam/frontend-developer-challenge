@@ -1,0 +1,65 @@
+$mainColor: #707070;
+$textColorBgDark: #FFF;
+
+.sidenav-top {
+    background: $mainColor 0% 0% no-repeat padding-box;
+    border: 1px solid $mainColor;
+    top: 0px;
+    left: 0px;
+    padding-top: 69px;
+    padding-bottom: 49.33px;
+    min-height: 319px;
+    height: auto;
+    color: $textColorBgDark;
+    opacity: 1;
+}
+
+.sidenav-top .presentation {
+    text-align: center;
+}
+
+.sidenav-top .sidenav-top-nav {
+    background: transparent;
+    text-align: center;
+    box-shadow: none;
+    height: auto;
+    line-height: 0px;
+}
+
+.sidenav-top .presentation .line-1,
+.sidenav-top .presentation .line-2,
+.sidenav-top .presentation .line-3 {
+    font-family: "Helvetica Neue";
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.sidenav-top .presentation .line-1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.sidenav-top .presentation .line-2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    line-height: 49px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.sidenav-top .presentation .line-3 {
+    margin-top: 24px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}

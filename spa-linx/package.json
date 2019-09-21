@@ -3,16 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "7.0.0-beta.46",
+    "i18next": "17.0.16",
     "react": "^16.9.0",
+    "react-dev-utils": "^9.0.4",
     "react-dom": "^16.9.0",
+    "react-i18next": "10.12.5",
     "react-scripts": "3.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "sass src/styles/scss:src/styles/css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "sass": "sass --watch src/styles/scss:src/styles/css",
   "eslintConfig": {
     "extends": "react-app"
   },

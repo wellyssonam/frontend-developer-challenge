@@ -1,0 +1,31 @@
+$btnTextColor: #FFF;
+
+.App .sidenav-top .btn-link {
+    width: 160px;
+    height: 40px;
+    margin-right: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: $btnTextColor 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #888888;
+    opacity: 1;
+}
+
+.App .sidenav-top .link:last-child .btn-link {
+    margin-right: 0px;
+}
+
+.App .sidenav-top .btn-link:focus,
+.App .sidenav-top .btn-link:hover {
+    background: transparent;
+    border: 1px solid $btnTextColor;
+    color: $btnTextColor;
+}
