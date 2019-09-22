@@ -124,3 +124,29 @@ body {
     border: 1px solid $btnTextColor;
     color: $btnTextColor;
 }
+
+.share form.user-form .field {
+    display: grid;
+}
+
+.share form.user-form label {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    font-family: $fontFamily;
+    letter-spacing: 0;
+    color: $fontColor;
+    opacity: 1;
+}
+
+.share form.user-form input {
+    border: 1px solid $mainColor;
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    opacity: 1;
+    height: 30px;
+}
+
+.share form.user-form input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid $mainColor;
+    box-shadow: unset;
+}

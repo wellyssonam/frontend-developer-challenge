@@ -20,6 +20,10 @@
         "share": {
             "title2": "Compartilhe a novidade",
             "line1": "Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!"
+        },
+        "userform":
+        {
+            "brn_send_now": "Enviar agora"
         }
     },
     "carddata": {
@@ -27,5 +31,10 @@
         "text_from": "De",
         "text_for": "Por",
         "text_installments": "ou {{count}}x de R${{value}}"
+    },
+    "footerpage": {
+        "text_line1": "Testando suas habilidades em HTML, CSS e JS.",
+        "text_line2": "Linx Impulse",
+        "text_line3": "2019"
     }
 }

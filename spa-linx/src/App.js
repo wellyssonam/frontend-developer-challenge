@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import { useTranslation } from 'react-i18next';
 import './styles/scss/App.scss';
+import FooterPage from './components/FooterPage';
 
 function App() {
   const { t } = useTranslation('common');
@@ -30,7 +31,9 @@ function App() {
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <FooterPage></FooterPage>
+      </footer>
     </div>
   );
 }
