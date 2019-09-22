@@ -1,0 +1,49 @@
+@import "default.scss";
+
+.home .container-default {
+    margin: 0px auto;
+}
+
+.home .products {
+    margin-top: 48.67px;
+}
+
+.home .title {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: $fontColor;
+    opacity: 1;
+}
+
+.home .btn-default.btn-more {
+    height: 39px;
+    width: auto;
+    min-width: 260px;
+    margin-top: 0px;
+}
+
+.home .share {
+    margin-top: 164px;
+}
+
+.home .share .title {
+    margin-bottom: 44px;
+}
+
+.home .share .line1 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0px;
+    margin-bottom: 39px;
+    text-align: center;
+    font-weight: normal;
+    font-family: $fontFamily;
+    letter-spacing: 0;
+    color: $fontColor;
+    opacity: 1;
+}

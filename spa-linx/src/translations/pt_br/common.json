@@ -13,5 +13,19 @@
             "btn_products": "Seus produtos",
             "btn_share": "Compartilhe"
         }
+    },
+    "homepage": {
+        "title": "Sua seleção especial",
+        "btn_more": "Ainda mais produtos aqui!",
+        "share": {
+            "title2": "Compartilhe a novidade",
+            "line1": "Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!"
+        }
+    },
+    "carddata": {
+        "btn_buy": "Comprar",
+        "text_from": "De",
+        "text_for": "Por",
+        "text_installments": "ou {{count}}x de R${{value}}"
     }
 }

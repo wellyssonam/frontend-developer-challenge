@@ -19,7 +19,7 @@ function App() {
         </SidenavTop>
       </header>
       <main>
-        <div className="container-fluid container-default">
+        <div className="container container-default">
           <div className="row">
               <div className="col s12 m12">
                 <Switch>

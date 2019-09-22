@@ -1,5 +1,4 @@
-$mainColor: #707070;
-$textColorBgDark: #FFF;
+@import "default.scss";
 
 .sidenav-top {
     background: $mainColor 0% 0% no-repeat padding-box;
@@ -29,7 +28,7 @@ $textColorBgDark: #FFF;
 .sidenav-top .presentation .line-1,
 .sidenav-top .presentation .line-2,
 .sidenav-top .presentation .line-3 {
-    font-family: "Helvetica Neue";
+    font-family: $fontFamily;
     letter-spacing: 0;
     opacity: 1;
 }
@@ -39,7 +38,6 @@ $textColorBgDark: #FFF;
     margin-bottom: 0px;
     font-size: 20px;
     line-height: 24px;
-    font-family: "Helvetica Neue";
     font-weight: normal;
     letter-spacing: 0;
     opacity: 1;
@@ -50,7 +48,6 @@ $textColorBgDark: #FFF;
     margin-bottom: 0px;
     font-size: 40px;
     line-height: 49px;
-    font-family: "Helvetica Neue";
     font-weight: bold;
     letter-spacing: 0;
     opacity: 1;

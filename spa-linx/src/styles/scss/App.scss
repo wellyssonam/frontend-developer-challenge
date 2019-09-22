@@ -1,8 +1,101 @@
-$btnTextColor: #FFF;
+@import "default.scss";
+
+body {
+    font-family: $fontFamily;
+}
+
+.button.btn-first,
+.button.btn-default {
+    width: 100%;
+    height: 30px;
+    background: $btnBgColorCard 0% 0% no-repeat padding-box;
+    border: 1px solid $mainColor;
+    border-radius: 4px;
+    opacity: 1;
+    font-family: $fontFamily;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: $fontColor;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.button.btn-first span {
+    padding-right: 0px;
+    transition: 700ms ease-out;
+}
+
+.button.btn-default span {
+    transition: 700ms ease-out;
+}
+
+.button.btn-first .add-cart {
+    position: absolute;
+    font-size: 1.4rem;
+    right: 35px;
+    opacity: 0;
+    transition: 0.75s ease;
+}
+
+.button.btn-first:hover span {
+    padding-right: 15px;
+    color: $textColorCardAfter;
+}
+
+.button.btn-default:hover span {
+    color: $textColorCardAfter;
+}
+
+.button.btn-first:hover .add-cart {
+    right: 45px;
+    color: $textColorCardAfter;
+    opacity: 1;
+}
+
+.button.btn-first:hover {
+    background: $mainColor;
+    cursor: pointer;
+    opacity: 1;
+    animation: buttonChange 0.3s all;
+}
+  
+@keyframes buttonChange {
+    0% {
+        background: $btnBgColorCard;
+    }
+    100% {
+        background: $mainColor;
+    }
+}
+
+.button.btn-default:hover {
+    background: $mainColor;
+    cursor: pointer;
+    animation: buttonDefaultChange 0.5s ease-in-out;
+}
+  
+@keyframes buttonDefaultChange {
+    0% {
+        background: $btnBgColorCard;
+    }
+    100% {
+        background: $mainColor;
+    }
+}
+
+.container-default {
+    margin: 0 
+}
 
 .App .sidenav-top .btn-link {
-    width: 160px;
-    height: 40px;
+    min-width: 160px;
+    width: auto;
+    min-height: 40px;
+    height: auto;
+    margin-right: 40px;
     margin-right: 40px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -11,20 +104,22 @@ $btnTextColor: #FFF;
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
+    font-family: $fontFamily;
     font-size: 14px;
     line-height: 16px;
     font-weight: normal;
     letter-spacing: 0;
-    color: #888888;
+    color: $fontColor;
     opacity: 1;
+    transition: 0.4s ease;
 }
 
 .App .sidenav-top .link:last-child .btn-link {
     margin-right: 0px;
 }
 
-.App .sidenav-top .btn-link:focus,
 .App .sidenav-top .btn-link:hover {
+    cursor: pointer;
     background: transparent;
     border: 1px solid $btnTextColor;
     color: $btnTextColor;
