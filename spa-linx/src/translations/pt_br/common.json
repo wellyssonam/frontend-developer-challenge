@@ -23,7 +23,9 @@
         },
         "userform":
         {
-            "brn_send_now": "Enviar agora"
+            "brn_send_now": "Enviar agora",
+            "label_name": "Nome do seu amigo:",
+            "label_email": "E-mail:"
         }
     },
     "carddata": {

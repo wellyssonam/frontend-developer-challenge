@@ -1,0 +1,46 @@
+{
+    "sidenavtop": {
+        "presentation": {
+            "line1": "a special product",
+            "line2": "selection for you",
+            "line3": "All products in this list have been selected from your navigation. Enjoy!"
+        }
+    },
+    "app": {
+        "sidenavtop": {
+            "btn_linx": "Meet Linx",
+            "btn_help_algor": "Help the algorithm",
+            "btn_products": "Your products",
+            "btn_share": "Share"
+        }
+    },
+    "homepage": {
+        "title": "Your special selection",
+        "btn_more": "Even more products here!",
+        "share": {
+            "title2": "Share the news",
+            "line1": "Want your friends to win their personalized list too? Fill in now!"
+        },
+        "userform":
+        {
+            "brn_send_now": "Send now",
+            "label_name": "Name of your friend:",
+            "label_email": "Email:"
+        }
+    },
+    "carddata": {
+        "btn_buy": "Buy",
+        "text_from": "From",
+        "text_for": "For",
+        "text_installments": "or {{count}}x of R${{value}}"
+    },
+    "footerpage": {
+        "text_line1": "Testing Your HTML, CSS, and JS Skills.",
+        "text_line2": "Linx Impulse",
+        "text_line3": "2019"
+    },
+    "errorpage404":
+    {
+        "text": "Page not found!"
+    }
+}

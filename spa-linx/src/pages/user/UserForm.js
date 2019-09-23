@@ -13,12 +13,12 @@ const UserFormFunc = props => {
     }
 
     return (
-        <form className="user-form" onSubmit={handleSubmit((fields) => submit(fields, submitUserAction))}>
+        <form className="user-form" onSubmit={handleSubmit((fields) => submit(fields, submitUserAction))} noValidate>
             <div className="row">
                 <div className="col s12 m6">
                     <div className="field">
                         <label>
-                            Name
+                            { t("homepage.userform.label_name") }
                         </label>
                         <Field
                             type="text"
@@ -30,7 +30,7 @@ const UserFormFunc = props => {
                 <div className="col s12 m6">
                     <div className="field">
                         <label>
-                            E-mail
+                            { t("homepage.userform.label_email") }
                         </label>
                         <Field
                             type="text"

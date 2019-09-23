@@ -7,7 +7,7 @@ export const increment = () => {
 
 // asynchronous action creator
 export const fetchData = () => {
-    console.log('teste')
+    // console.log('teste')
     // return (dispatch) => {
     //     return fetch('https://jsonplaceholder.typicode.com/todos/1')
     //         .then(response => response.json())

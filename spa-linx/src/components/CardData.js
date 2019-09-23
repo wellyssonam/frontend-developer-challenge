@@ -17,9 +17,9 @@ class CardData extends Component {
                 <div className="card-content">
                     <p className="name">{ this.props.name }</p>
                     <p className="description">{ this.props.description }</p>
-                    <p className="old-price">{ t("carddata.text_from") }: R${ this.props.oldPrice }</p>
-                    <p className="price">{ t("carddata.text_for") }: R${ this.props.price }</p>
-                    <p className="installments">{ t("carddata.text_installments", { count: this.props.count, value: this.props.value }) }</p>
+                    <p className="old-price">{ t("carddata.text_from") }: R${ (this.props.oldPrice).toFixed(2) }</p>
+                    <p className="price">{ t("carddata.text_for") }: R${ (this.props.price).toFixed(2) }</p>
+                    <p className="installments">{ t("carddata.text_installments", { count: this.props.count, value: (this.props.value).toFixed(2) }) }</p>
                 </div>
                 <div className="card-footer">
                     <button className="button btn-first">

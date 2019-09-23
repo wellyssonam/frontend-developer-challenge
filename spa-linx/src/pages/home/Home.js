@@ -8,90 +8,33 @@ class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            products: []
+            nextPage: 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1',
+            products: [],
+            btnSpinner: false
         }
     }
 
-    componentDidMount() {
-        console.log('>>>> mounted')
-
+    getListProductsApi = () => {
         console.log(this.props)
-        this.setState({
-            products: [
-                {
-                    "id": 0,
-                    "name": "Product Number 0",
-                    "image": "//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829158",
-                    "oldPrice": 397,
-                    "price": 381,
-                    "description": "Product long description number 0 just to make more than one like of text.",
-                    "installments": {
-                        "count": 10,
-                        "value": 38.1
-                    }
-                },
-                {
-                    "id": 1,
-                    "name": "Product Number 1",
-                    "image": "//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829158",
-                    "oldPrice": 179,
-                    "price": 164,
-                    "description": "Product long description number 1 just to make more than one like of text.",
-                    "installments": {
-                        "count": 10,
-                        "value": 16.4
-                    }
-                },
-                {
-                    "id": 2,
-                    "name": "Product Number 2",
-                    "image": "//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6747399",
-                    "oldPrice": 220,
-                    "price": 189,
-                    "description": "Product long description number 2 just to make more than one like of text.",
-                    "installments": {
-                        "count": 10,
-                        "value": 18.9
-                    }
-                },
-                {
-                    "id": 3,
-                    "name": "Product Number 3",
-                    "image": "//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6124117",
-                    "oldPrice": 267,
-                    "price": 237,
-                    "description": "Product long description number 3 just to make more than one like of text.",
-                    "installments": {
-                        "count": 10,
-                        "value": 23.7
-                    }
-                },
-                {
-                    "id": 4,
-                    "name": "Product Number 4",
-                    "image": "//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=5783178",
-                    "oldPrice": 288,
-                    "price": 261,
-                    "description": "Product long description number 4 just to make more than one like of text.",
-                    "installments": {
-                        "count": 10,
-                        "value": 26.1
-                    }
-                },
-                {
-                    "id": 5,
-                    "name": "Product Number 5",
-                    "image": "//imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6670538",
-                    "oldPrice": 390,
-                    "price": 367,
-                    "description": "Product long description number 5 just to make more than one like of text.",
-                    "installments": {
-                        "count": 10,
-                        "value": 36.7
-                    }
-                }
-            ]
+        fetch(this.state.nextPage)
+        .then(response => response.json())
+        .then(resJson => {
+            this.setState({
+                products: this.state.products.concat(resJson.products),
+                nextPage: 'https://' + resJson.nextPage,
+                btnSpinner: false
+            })
         })
+        .catch(err => console.error(err))
+    }
+
+    componentDidMount() {
+        this.getListProductsApi()
+    }
+
+    moreProducts = () => {
+        this.setState({ btnSpinner: true })
+        this.getListProductsApi(this.state.nextPage)
     }
 
     render() {
@@ -121,7 +64,8 @@ class Home extends Component {
                     }
                     </div>
                     <div style={{ textAlign: 'center' }}>
-                        <button className="button btn-default btn-more">
+                        <button className="button btn-default btn-more" onClick={ this.moreProducts }>
+                            { this.state.btnSpinner ? (<i className="fa fa-spinner fa-spin"></i>) : (<i></i>)}
                             <span>{ t("homepage.btn_more") }</span>
                         </button>
                     </div>

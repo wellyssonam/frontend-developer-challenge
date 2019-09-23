@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import common_pt_br from "./translations/pt_br/common.json";
-// import common_en from "./translations/en/common.json";
+import common_en from "./translations/en/common.json";
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import reduxThunk from 'redux-thunk'
@@ -20,6 +20,9 @@ i18next.init({
         resources: {    
             pt_br: {
                 common: common_pt_br    // 'common' is our custom namespace
+            },
+            en: {
+                common: common_en    // 'common' is our custom namespace
             }
         },
 });
