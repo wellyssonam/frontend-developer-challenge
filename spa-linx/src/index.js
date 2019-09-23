@@ -16,10 +16,10 @@ import '../src/styles/css/materialize.min.css'
 
 i18next.init({
     interpolation: { escapeValue: false },  // React already does escaping
-    lng: 'pt_br',                              // language to use
+    lng: 'pt_br',   // language to use
         resources: {    
             pt_br: {
-                common: common_pt_br              // 'common' is our custom namespace
+                common: common_pt_br    // 'common' is our custom namespace
             }
         },
 });

@@ -36,5 +36,9 @@
         "text_line1": "Testando suas habilidades em HTML, CSS e JS.",
         "text_line2": "Linx Impulse",
         "text_line3": "2019"
+    },
+    "errorpage404":
+    {
+        "text": "Página não encontrada!"
     }
 }

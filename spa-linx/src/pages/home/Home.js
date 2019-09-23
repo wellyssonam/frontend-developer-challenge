@@ -14,6 +14,8 @@ class Home extends Component {
 
     componentDidMount() {
         console.log('>>>> mounted')
+
+        console.log(this.props)
         this.setState({
             products: [
                 {

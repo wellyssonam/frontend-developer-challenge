@@ -6,17 +6,27 @@ import Home from './pages/home/Home';
 import { useTranslation } from 'react-i18next';
 import './styles/scss/App.scss';
 import FooterPage from './components/FooterPage';
+import ErrorPage404 from './components/ErrorPage404';
 
-function App() {
+function App(props) {
   const { t } = useTranslation('common');
+
   return (
     <div className="App">
       <header>
         <SidenavTop>
-          <Link className="link" to="/"><button className="btn-link" type="button">{ t("app.sidenavtop.btn_linx") }</button></Link>
-          <Link className="link" to="/"><button className="btn-link" type="button">{ t("app.sidenavtop.btn_help_algor") }</button></Link>
-          <Link className="link" to="/"><button className="btn-link" type="button">{ t("app.sidenavtop.btn_products") }</button></Link>
-          <Link className="link" to="/"><button className="btn-link" type="button">{ t("app.sidenavtop.btn_share") }</button></Link>
+          <Link className="link" to="/">
+            <button className="btn-link" type="button">{ t("app.sidenavtop.btn_linx") }</button>
+          </Link>
+          <Link className="link" to="/">
+            <button className="btn-link" type="button">{ t("app.sidenavtop.btn_help_algor") }</button>
+          </Link>
+          <Link className="link" to="/">
+            <button className="btn-link" type="button">{ t("app.sidenavtop.btn_products") }</button>
+          </Link>
+          <Link className="link" to="/">
+            <button className="btn-link" type="button">{ t("app.sidenavtop.btn_share") }</button>
+          </Link>
         </SidenavTop>
       </header>
       <main>
@@ -25,7 +35,7 @@ function App() {
               <div className="col s12 m12">
                 <Switch>
                     <Route path="/" component={Home} exact={true} />
-                    {/* <Route path="*" component={ErrorPage404} exact={true} /> */}
+                    <Route path="*" component={ErrorPage404} exact={true} />
                 </Switch>
               </div>
           </div>
