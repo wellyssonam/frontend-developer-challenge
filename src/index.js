@@ -12,7 +12,7 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import reduxThunk from 'redux-thunk'
 import reducer from './redux/reducers'
-import '../src/styles/css/materialize.min.css'
+import './styles/css/materialize.min.css'
 
 i18next.init({
     interpolation: { escapeValue: false },  // React already does escaping

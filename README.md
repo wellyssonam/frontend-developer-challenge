@@ -30,7 +30,7 @@ O desafio consiste no *layout* de uma *landing page* com uma grade de produtos e
 - React JS
 
 ---
-### Não Foi Possível Implementar
+### Não Foi Possível Fazer
 
 - Validação dos campos nome e e-mail presentes no formulário do usuário
 
@@ -49,3 +49,5 @@ O desafio consiste no *layout* de uma *landing page* com uma grade de produtos e
 
 ---
 ### Página Publicada
+
+Acessar página **[wellyssonmelo-linx](https://wellyssonmelo-linx.herokuapp.com/)**
