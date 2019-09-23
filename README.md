@@ -33,7 +33,6 @@ O desafio consiste no *layout* de uma *landing page* com uma grade de produtos e
 ### Não Foi Possível Fazer
 
 - Validação dos campos nome e e-mail presentes no formulário do usuário
-- Não foi possível fazer live preview da aplicação
 
 ---
 ### Melhorias Feitas
@@ -50,3 +49,5 @@ O desafio consiste no *layout* de uma *landing page* com uma grade de produtos e
 
 ---
 ### Página Publicada
+
+Acessar página **[wellyssonmelo-linx](https://wellyssonmelo-linx.herokuapp.com/)**
